@@ -14,4 +14,3 @@ automations:
     tasks:
       - action: delete
         path: "%USERPROFILE%\\Downloads\\archivo-temporal.txt"
-

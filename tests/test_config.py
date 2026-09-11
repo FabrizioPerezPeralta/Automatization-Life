@@ -15,4 +15,3 @@ def test_load_config(tmp_path: Path) -> None:
     path = tmp_path / "config.yaml"
     path.write_text("automations:\n  - name: demo\n    tasks:\n      - action: mkdir\n        path: out\n", encoding="utf-8")
     assert load_config(path)["automations"][0]["name"] == "demo"
-

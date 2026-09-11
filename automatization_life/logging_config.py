@@ -24,4 +24,3 @@ def configure_logging(verbose: bool = False) -> None:
     root.handlers.clear()
     root.addHandler(handler)
     root.setLevel(logging.DEBUG if verbose else logging.INFO)
-

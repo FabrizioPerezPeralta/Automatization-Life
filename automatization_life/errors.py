@@ -8,4 +8,3 @@ class ValidationError(AutomationError):
 
 class ConfirmationRequired(AutomationError):
     """La acción requiere confirmación explícita."""
-

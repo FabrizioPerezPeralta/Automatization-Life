@@ -19,4 +19,3 @@ def get_action(name: str) -> PluginAction | None:
 
 def action_names() -> set[str]:
     return set(_actions)
-
