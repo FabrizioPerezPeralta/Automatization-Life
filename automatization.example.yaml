@@ -1,0 +1,17 @@
+automations:
+  - name: preparar-proyecto
+    tasks:
+      - action: mkdir
+        path: "%USERPROFILE%\\Documents\\MiProyecto"
+      - action: write_text
+        path: "%USERPROFILE%\\Documents\\MiProyecto\\README.txt"
+        content: "Proyecto creado por Automatization-Life.\n"
+      - action: launch
+        path: "%USERPROFILE%\\Documents\\MiProyecto"
+
+  - name: limpieza-descargas
+    interval_seconds: 3600
+    tasks:
+      - action: delete
+        path: "%USERPROFILE%\\Downloads\\archivo-temporal.txt"
+
